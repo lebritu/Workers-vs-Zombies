@@ -12,5 +12,5 @@ public class SoundPool : MonoBehaviour
     public AudioClip usaCard, carregaCard, sem_energia, pega_energia, ganha_energia, explosao, impacto, morte_unidade, morte_zumbi, hit_unidade, hit_zumbi, hit_barricada, quebra_barricada;
     public AudioClip muda_volume, hit, vitoria, derrota;
     public AudioClip spawn_Atirador, spawn_Gerador, spawn_Barricada, spawn_Detonador;
-    public AudioClip ok_Atirador, ok_Gerador, ok_Barricada;
+    public AudioClip ok_Atirador, ok_Gerador, ok_Barricada, unidade_para_onde;
 }

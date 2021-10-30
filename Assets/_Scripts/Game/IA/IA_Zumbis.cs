@@ -219,4 +219,11 @@ public class IA_Zumbis : MonoBehaviour
             IniciarAtack(other.GetComponent<IA_Unidades>());
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (ia_unidade) // quando a unidade muda de posição ela libera o zumbi que a estava atacando
+        {
+            IA_unidade_morta_Callback();
+        }
+    }
 }

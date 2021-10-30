@@ -15,5 +15,5 @@ MonoBehaviour:
   Tipo: 3
   icon: {fileID: 21300000, guid: f4d6a0ecbdae76149964d7cc3d899742, type: 3}
   nome: Detonador
-  preco: 50
+  preco: 60
   maxDelay: 15

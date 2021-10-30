@@ -177,7 +177,10 @@ public class IA_Unidades : MonoBehaviour
     {
         slot_point = t;
         UM = um;
+        anim.SetTrigger("Idle");
         agent.SetDestination(t.position);
+        checkpoint_B = false;
+        colisor.enabled = false;
         switch (Tipo)
         {
             case tipo_select.Atirador:
@@ -199,6 +202,7 @@ public class IA_Unidades : MonoBehaviour
             {
                 checkpoint_B = true;
                 colisor.enabled = true;
+                transform.rotation = Quaternion.Euler(0, 90, 0);
                 switch (Tipo)
                 {
                     case tipo_select.Atirador:
@@ -212,6 +216,18 @@ public class IA_Unidades : MonoBehaviour
                         break;
                 }
             }
+        }
+    }
+    void ChangePosicao() // inicia a troca de posição da unidade
+    {
+        if(UM != null && !GM.unidade_place_B)
+        {
+            GM.IA = this;
+            CancelInvoke("Atirador_Arremesso");
+            UM.disponivel = true;
+            saida_de_som.PlayOneShot(SP.unidade_para_onde, SP.volume);
+            GM.unidade_place_B = true;
+            GM.ActiveSlots();
         }
     }
 
@@ -258,5 +274,10 @@ public class IA_Unidades : MonoBehaviour
         anim.SetTrigger("MontarBarricada");
         transform.rotation = Quaternion.Euler(new Vector3(0, 90, 0));
         barricada.SetActive(true);
+    }
+
+    private void OnMouseDown()
+    {
+        ChangePosicao();
     }
 }
