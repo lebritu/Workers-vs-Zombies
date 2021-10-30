@@ -97,7 +97,7 @@ public class Game_Manager : MonoBehaviour
     {
         menu.saida_de_som.PlayOneShot(menu.SP.vitoria, menu.SP.volume);
         vitoria_painel.SetActive(true);
-       
+        Time.timeScale = 0;
     }
     public void Derrota()
     {

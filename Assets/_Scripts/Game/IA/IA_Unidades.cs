@@ -223,8 +223,7 @@ public class IA_Unidades : MonoBehaviour
         if(UM != null && !GM.unidade_place_B)
         {
             GM.IA = this;
-            CancelInvoke("Atirador_Arremesso");
-            UM.disponivel = true;
+            CancelInvoke("Atirador_Arremesso");        
             saida_de_som.PlayOneShot(SP.unidade_para_onde, SP.volume);
             GM.unidade_place_B = true;
             GM.ActiveSlots();
@@ -276,8 +275,12 @@ public class IA_Unidades : MonoBehaviour
         barricada.SetActive(true);
     }
 
-    private void OnMouseDown()
+    private void OnMouseOver()
     {
-        ChangePosicao();
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            ChangePosicao();
+        }
     }
+
 }

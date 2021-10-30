@@ -39,6 +39,10 @@ public class Unidades_Manager : MonoBehaviour
 
     void Place()
     {
+        if(GM.IA.UM != null)
+        {
+            GM.IA.UM.disponivel = true;
+        }
         GM.IA.Comando(transform, this);
         GM.DesactiveSlots();
         disponivel = false;

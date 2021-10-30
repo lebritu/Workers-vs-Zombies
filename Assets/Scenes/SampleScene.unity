@@ -618,12 +618,12 @@ RectTransform:
   m_GameObject: {fileID: 66514290}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.77408, y: 0.77408, z: 0.77408}
   m_Children:
   - {fileID: 1534328154}
   - {fileID: 1970459610}
   m_Father: {fileID: 1903248472}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2017,7 +2017,7 @@ RectTransform:
   m_Children:
   - {fileID: 121972855}
   - {fileID: 646260402}
-  m_Father: {fileID: 1903248472}
+  m_Father: {fileID: 921716632}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2653,7 +2653,7 @@ RectTransform:
   m_LocalScale: {x: 0.89171994, y: 0.89171994, z: 0.89171994}
   m_Children:
   - {fileID: 2086018811}
-  m_Father: {fileID: 1903248472}
+  m_Father: {fileID: 921716632}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2793,8 +2793,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC9 possivel trocar as posi\xE7\xF5es das unidades clicando nelas depois
-    de ja estarem em seus postos."
+  m_text: "\xC9 possivel trocar a posi\xE7\xE3o das unidades clicando nelas com o
+    \"bot\xE3o direito do mouse\" depois de ja estarem em seus postos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2821,7 +2821,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 101.05
+  m_fontSize: 83.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6679,7 +6679,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: afe486c4a1e93744f8a4019c517e2b5b, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -7687,6 +7687,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916583055}
   m_CullTransparentMesh: 1
+--- !u!1 &921716631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921716632}
+  m_Layer: 5
+  m_Name: Cards e Carteira
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &921716632
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921716631}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.89178, y: 0.89178, z: 0.89178}
+  m_Children:
+  - {fileID: 1139281794}
+  - {fileID: 342151776}
+  - {fileID: 289407665}
+  m_Father: {fileID: 1903248472}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -206.14, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &944151343
 GameObject:
   m_ObjectHideFlags: 0
@@ -8906,7 +8944,7 @@ RectTransform:
   m_Children:
   - {fileID: 1894027720}
   m_Father: {fileID: 1903248472}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9595,7 +9633,7 @@ RectTransform:
   - {fileID: 155228562}
   - {fileID: 1679970090}
   - {fileID: 899109131}
-  m_Father: {fileID: 1903248472}
+  m_Father: {fileID: 921716632}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -17431,9 +17469,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1139281794}
-  - {fileID: 342151776}
-  - {fileID: 289407665}
+  - {fileID: 921716632}
   - {fileID: 66514291}
   - {fileID: 1028771514}
   m_Father: {fileID: 1420264308}
